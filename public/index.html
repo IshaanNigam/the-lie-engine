@@ -178,6 +178,7 @@
 
             <div class="admin-settings">
               <label>Clue purchase price<input data-setting="cluePrice" type="number" min="0" max="20" value="2"></label>
+              <label>Turn timer (seconds, 0 is off)<input data-setting="turnSeconds" type="number" min="0" max="120" value="20"></label>
               <label>Rounds<input id="roundLimitInput" type="number" min="1" max="12" value="6"></label>
               <label>Starting points<input data-setting="startingPoints" type="number" min="0" max="100" value="10"></label>
               <label>Reveal reward<input data-setting="revealReward" type="number" min="-20" max="20" value="2"></label>
@@ -236,6 +237,7 @@
       <p class="rules-lead">Use the clues and your actions to work out the machine.</p>
 
       <div class="rule-block"><b>1. Take one action</b><p>On your turn, reveal a fresh clue, check a clue privately, shift a dial, or play an Event Card.</p></div>
+      <div class="rule-block"><b>Turn timer</b><p>If the admin has turned the timer on, you must act before the bar runs out or your action is skipped. Players who are offline when their turn comes are skipped for that round. Predictions are not timed.</p></div>
       <div class="rule-block"><b>Revealing clues</b><p>You can reveal clues dealt in the current round. Older clues stay in your private archive, where you can still verify them.</p></div>
       <div class="rule-block"><b>2. Lock your prediction</b><p>Once every player has acted, secretly choose a value from 0–3 for A, B and C. Your guess stays hidden until everyone locks.</p></div>
       <div class="rule-block"><b>3. Read the result</b><p>The room admin sets the rewards for one- and two-dial matches. A perfect guess wins immediately. Otherwise, a hidden automatic event changes the machine before the next round. After the final round, the highest score wins; ties share the win.</p></div>
